@@ -1,0 +1,17 @@
+$testColor: (
+    red: red,
+    orange:orange
+);
+@function aColor($key) {
+    @if map-has-key($testColor, $key) {
+        @return map-get($testColor, $key)
+    }
+    @warn "Unknown `#{$key}` in $theme.";
+    @return null;
+}
+div.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: aColor(orange);
+}

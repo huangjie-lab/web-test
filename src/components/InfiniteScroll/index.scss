@@ -1,0 +1,12 @@
+@import '../../commons/common.scss';
+
+.scroll-container{
+    overflow: hidden;
+    height: 150px;
+    margin: 10px 0 0 10px;
+}
+div.inner{
+    margin: 0;
+    height: 22px;
+    color: aColor(red);
+}
