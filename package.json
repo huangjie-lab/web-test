@@ -7,33 +7,41 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.10.1",
+    "@types/react": "^18.3.12",
+    "ahooks": "^3.8.1",
+    "animate.css": "^4.1.1",
     "antd": "^5.20.3",
-    "axios": "^1.7.5",
+    "axios": "^1.7.7",
     "better-scroll": "^2.5.1",
+    "fs-extra": "^11.2.0",
+    "fse": "^4.0.1",
+    "http": "0.0.1-security",
     "i18next": "^23.15.1",
     "i18next-browser-languagedetector": "^8.0.0",
+    "mem-fs": "^4.1.1",
+    "multiparty": "^4.2.3",
+    "nodemon": "^3.1.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-i18next": "^15.0.2",
-    "react-loading-skeleton": "^3.4.0",
+    "react-loading-skeleton": "^3.5.0",
     "react-redux": "^9.1.2",
-    "react-router-dom": "^5.1.2",
+    "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "react-transition-group": "^4.4.5",
     "redux": "^5.0.1",
-    "web-vitals": "^2.1.4"
+    "swiper": "^11.1.14",
+    "typescript": "^5.7.2",
+    "web-vitals": "^2.1.4",
+    "ws": "^8.18.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
@@ -48,6 +56,10 @@
     ]
   },
   "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.11.0",
     "sass": "^1.77.8"
   }
 }

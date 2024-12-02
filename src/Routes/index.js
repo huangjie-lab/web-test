@@ -1,16 +1,34 @@
 import {  Route, Switch, useLocation } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import Home from '../components/Home';
+import About from '../components/About';
 import TestI18n from '../components/TestI18n';
 import InfiniteScroll from '../components/InfiniteScroll';
 import TestAsync from '../components/TestAsync';
 import { useState } from 'react';
 import i18n from '../i18n/config/i18n';
+import FileChunks from '../components/FileChunks';
+import FuwenBen from '../components/FuwenBen';
+import ClientHeight from '../components/ClientHeight';
+import MySkeleton from '../components/MySkeleton';
+import SkeletonTest from '../components/SkeletonTest';
+import TestTs from '../components/TsTest';
+
 const routes = [
     {
         path: '/home',
         exact: true,
         component: Home,
+    },
+    {
+        path:'/testTs',
+        exact: true,
+        component: TestTs
+    },
+    {
+        path: '/about',
+        exact: true,
+        component: About,
     },
     {
         path: '/testI18n',
@@ -26,7 +44,32 @@ const routes = [
         path: '/testAsync',
         exact: true,
         component: TestAsync,
-    }
+    },
+    {
+        path: '/fileChunks',
+        exact: true,
+        component: FileChunks,
+    },
+    {
+        path: '/fuwenBen',
+        exact: true,
+        component: FuwenBen,
+    },
+    {
+        path: '/clientHeight',
+        exact: true,
+        component: ClientHeight,
+    },
+    {
+        path: '/mySkeleton',
+        exact: true,
+        component: MySkeleton,
+    },
+    {
+        path: '/skeletonTest',
+        exact: true,
+        component: SkeletonTest,
+    },
 ]
 
 export const Routes = () => {

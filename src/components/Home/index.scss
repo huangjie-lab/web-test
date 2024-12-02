@@ -1,0 +1,11 @@
+.myimg{
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    background-repeat: no-repeat, no-repeat;
+    background-image: url('../../../../../../../Desktop/apple1.jpeg'),url('../../../../../../../Desktop/bg_1.png');
+    background-position: 0 0,0 10000px;
+    &:hover{
+        background-position: 0 1000px,0 0;
+    }
+}

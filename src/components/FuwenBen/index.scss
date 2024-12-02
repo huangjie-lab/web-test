@@ -1,0 +1,30 @@
+.highlight{
+    color: red;
+}
+
+.test{
+    width: 600px;
+    padding: 20px;
+    background-color: gray;
+    cursor: pointer;
+    &:first-letter{
+        color: red;
+    }
+    &:hover{
+        padding: 20px 50px;
+    }
+}
+.wrap{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        top: -100px;
+        left: -100px;
+        bottom: -100px;
+        right: -100px;
+    }
+}

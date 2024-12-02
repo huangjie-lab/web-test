@@ -1,0 +1,54 @@
+// .container{
+//     display: flex;
+// }
+// .left{
+//     // flex-basis:200px;
+//     width: 200px;
+//     background: green;
+// }
+// .main{
+//     flex: 1;
+//     background: red;
+// }
+// .right{
+//     // flex-basis:200px;
+//     width: 100px;
+//     background: green;
+// }
+.multi-transition {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.multi-transition:hover {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+    opacity: 0.5;
+    transform: rotate(45deg);
+}
+.size-transition {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+
+.size-transition:hover {
+    width: 200px;
+    height: 200px;
+}
+.color-transition {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: background-color 2.5s ease;
+}
+
+.color-transition:hover {
+    background-color: blue;
+}

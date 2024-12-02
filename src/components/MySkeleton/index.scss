@@ -1,0 +1,22 @@
+:root{
+    --base-color: red;
+}
+.test1{
+    color: var(--base-color);
+}
+
+.test2{
+    width: 100px;
+    color: var(--base-color);
+    position: relative;
+    &::after {
+        content: '*';
+        position: absolute;
+        font-size:12px;
+        font-family:PingFangSC-Semibold;
+        color:rgba(238,59,37,1);
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
